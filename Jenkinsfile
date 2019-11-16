@@ -21,7 +21,7 @@ pipeline {
         container('go') {
           dir('/home/jenkins/agent/go/src/github.com/vfarcic/go-demo-6') {
             checkout scm
-	    sk "make unittest"
+	    sh "make unittest"
             sh "make linux"
             sh "export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml"
             sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:$PREVIEW_VERSION"

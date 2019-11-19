@@ -1,5 +1,4 @@
 buildPack: go
-dockerRegistryOwner: vfarcic
 pipelineConfig:
   pipelines:
     pullRequest:

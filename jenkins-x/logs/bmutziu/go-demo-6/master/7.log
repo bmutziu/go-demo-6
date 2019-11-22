@@ -1,0 +1,21 @@
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-credential-initializer-pswft[0m
+{"level":"warn","ts":1574458482.4491386,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574458482.4497926,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-working-dir-initializer-lbzw9[0m
+{"level":"warn","ts":1574458483.446596,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574458483.4488463,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-git-source-bmutziu-go-demo-6-master-releas-cgk7s[0m
+{"level":"warn","ts":1574458487.5714104,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574458488.005609,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/go-demo-6.git @ v2.0.32 in path /workspace/source"}
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:2e307c12ba3182932d54935524f74620d53c0d47
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mbmutziu-go-demo-6-master-releas-sst7l-7[0m stage [32mnothing[0m and container [32mstep-silly[0m
+This is a silly pipeline

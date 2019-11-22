@@ -1,5 +1,4 @@
 buildPack: go
-dockerRegistryOwner: bmutziu
 pipelineConfig:
   pipelines:
     pullRequest:

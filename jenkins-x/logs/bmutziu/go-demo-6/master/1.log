@@ -1,54 +1,54 @@
 
-Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8kw62[0m
-{"level":"warn","ts":1574452558.7231705,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1574452558.724467,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-l7tvd[0m
+{"level":"warn","ts":1574502398.183249,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574502398.1839874,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-2tj5m[0m
-{"level":"warn","ts":1574452559.7476676,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1574452559.7496142,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-l4qnw[0m
+{"level":"warn","ts":1574502398.9890573,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574502398.990408,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-bmutziu-go-demo-6-master-6dxx7[0m
-{"level":"warn","ts":1574452568.8460102,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1574452569.2371728,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/go-demo-6.git @ v2.0.27 in path /workspace/source"}
+Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-bmutziu-go-demo-6-master-nsgbb[0m
+{"level":"warn","ts":1574502408.1908484,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574502408.5761254,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/go-demo-6.git @ v2.0.36 in path /workspace/source"}
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:d78e604890cea9a92157ff3cf3a0b05dc3b065b8
+Using SHAs from PULL_REFS=master:d30205e766eff7c3722dac5b7c6874769ac4af8d
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-build[0m
-go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
 go: finding github.com/davecgh/go-spew v1.1.1
-go: finding github.com/stretchr/objx v0.1.1
-go: finding github.com/stretchr/testify v1.2.2
 go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding github.com/stretchr/objx v0.1.1
+go: finding github.com/prometheus/client_golang v0.9.2
+go: finding github.com/golang/protobuf v1.2.0
+go: finding github.com/stretchr/testify v1.2.2
 go: finding github.com/pmezard/go-difflib v1.0.0
 go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
-go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
-go: finding github.com/golang/protobuf v1.2.0
-go: finding github.com/prometheus/client_golang v0.9.2
+go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
 go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
-go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: downloading github.com/prometheus/client_golang v0.9.2
+go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: extracting github.com/prometheus/client_golang v0.9.2
 go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 go: downloading github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
-go: downloading github.com/golang/protobuf v1.2.0
 go: downloading github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
-go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: downloading github.com/golang/protobuf v1.2.0
+go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
 go: extracting github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: extracting github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
 go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
-go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
 go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.1
 go: extracting github.com/golang/protobuf v1.2.0
 CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-demo-6 main.go
@@ -69,22 +69,22 @@ Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build
 [36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
 [36mINFO[0m[0000] COPY ./bin/ /                                
 [36mINFO[0m[0000] Taking snapshot of files...                  
-2019/11/22 19:56:42 pushed blob: sha256:fcaabdca328ce4d021447e030b27bad19a2edc6a187f4481d02b07b79c43e7ea
-2019/11/22 19:56:43 pushed blob: sha256:dcb98d08bc950cf6fca855bf50c2aad048fd3ef3cb50509dc32d644f5e963f7e
-2019/11/22 19:56:43 gcr.io/bmgcpjx/go-demo-6:2.0.27: digest: sha256:2f85a88effada1b8ff99c11aded1595b20a813a560**d5a5fcc064000839cc7c size: 428
+2019/11/23 09:47:18 pushed blob: sha256:1e9cec250826f7ceae9b3e9515bc6829c39b3e48eb54916b17c4bfc032ac90b2
+2019/11/23 09:47:19 pushed blob: sha256:2330298e7c7f1cec464faf290ff0c7464cffa0728f7b2ca6787b38a372d82306
+2019/11/23 09:47:19 gcr.io/bmgcpjx/go-demo-6:2.0.36: digest: sha256:b4dd063ed63f80695747f6c07ac6dc70805cc6aa84ed22610c94d2f4e0f78bfb size: 428
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/go-demo-6 to an unshallow repository
-Generating change log from git ref 5a34d8703ff124860b2231c2b6945db1b19442be => ab705c9**d0f5db091f783fc385efceab56195a7
-WARNING: No release found for *******/go-demo-6 and tag v2.0.27 so creating a new release
-Updated the release information at https://github.com/*******/go-demo-6/releases/tag/v2.0.27
+Generating change log from git ref 60282431adbe24449382907e3596c6c36d0c6834 => 44820ed807fde78219ae011339a7a7535ce1a754
+WARNING: No release found for *******/go-demo-6 and tag v2.0.36 so creating a new release
+Updated the release information at https://github.com/*******/go-demo-6/releases/tag/v2.0.36
 generated: /workspace/source/charts/go-demo-6/templates/release.yaml
-Created Release go-demo-6-2-0-27 resource in namespace **
-Updating PipelineActivity *******-go-demo-6-master-1 with version 2.0.27
-Updated PipelineActivities *******-go-demo-6-master-1 with release notes URL: https://github.com/*******/go-demo-6/releases/tag/v2.0.27
+Created Release go-demo-6-2-0-36 resource in namespace **
+Updating PipelineActivity *******-go-demo-6-master-1 with version 2.0.36
+Updated PipelineActivities *******-go-demo-6-master-1 with release notes URL: https://github.com/*******/go-demo-6/releases/tag/v2.0.36
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
@@ -94,20 +94,19 @@ Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:808
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file go-demo-6-2.0.27.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file go-demo-6-2.0.36.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
 Showing logs for build [32mbmutziu-go-demo-6-master-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app go-demo-6 version 2.0.27 to namespace **-staging
+Promoting app go-demo-6 version 2.0.36 to namespace **-staging
 Created Pull Request: https://github.com/*******/environment-tekton-staging/pull/1
 Added label updatebot to Pull Request https://github.com/*******/environment-tekton-staging/pull/1
 got git provider status pending from PR https://github.com/*******/environment-tekton-staging/pull/1
 got git provider status pending from PR https://github.com/*******/environment-tekton-staging/pull/1
 got git provider status pending from PR https://github.com/*******/environment-tekton-staging/pull/1
 got git provider status pending from PR https://github.com/*******/environment-tekton-staging/pull/1
-got git provider status pending from PR https://github.com/*******/environment-tekton-staging/pull/1
-Pull Request https://github.com/*******/environment-tekton-staging/pull/1 is merged at sha 8c1a72cc89f1b8288306226546c1c859a2e356fe
+Pull Request https://github.com/*******/environment-tekton-staging/pull/1 is merged at sha f73281c8af6683859c441665d94ebbbd3c60ce5a
 Pull Request merged but we are not waiting for the update pipeline to complete!
 WARNING: Could not find the service URL in namespace **-staging for names go-demo-6, **-go-demo-6, **-staging-go-demo-6

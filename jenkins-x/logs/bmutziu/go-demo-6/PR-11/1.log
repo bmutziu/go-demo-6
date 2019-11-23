@@ -1,0 +1,39 @@
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-brpfs[0m
+{"level":"warn","ts":1574529795.43702,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574529795.4392602,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-m5qbf[0m
+{"level":"warn","ts":1574529796.5646596,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574529796.5662346,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-bmutziu-go-demo-6-pr-11-se-grrhp[0m
+{"level":"warn","ts":1574529802.6329231,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574529803.0189884,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/go-demo-6.git @ d30205e766eff7c3722dac5b7c6874769ac4af8d in path /workspace/source"}
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d30205e766eff7c3722dac5b7c6874769ac4af8d,11:83f19e24be913225ee2a25eb0b57bcc45d6e45db
+DEBUG: ran git fetch --unshallow origin 83f19e24be913225ee2a25eb0b57bcc45d6e45db: d30205e766eff7c3722dac5b7c6874769ac4af8d: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d30205e766eff7c3722dac5b7c6874769ac4af8d in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 83f19e24be913225ee2a25eb0b57bcc45d6e45db in 
+Merged SHA 83f19e24be913225ee2a25eb0b57bcc45d6e45db with commit message 'Added Knative' into base branch master
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 83f19e24be913225ee2a25eb0b57bcc45d6e45db: d30205e766eff7c3722dac5b7c6874769ac4af8d: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d30205e766eff7c3722dac5b7c6874769ac4af8d in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 83f19e24be913225ee2a25eb0b57bcc45d6e45db in 
+Merged SHA 83f19e24be913225ee2a25eb0b57bcc45d6e45db with commit message 'Added Knative' into base branch master
+
+Showing logs for build [32mmeta-bmutziu-go-demo-6-pr-11-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.jx/jenkins-x-versions
+error: failed to load project config in dir /workspace/source: Validation failures in YAML file /workspace/source/jenkins-x.yml:
+pipelineConfig.pipelines.pullRequest.promote.steps: Invalid type. Expected: array, given: null
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m

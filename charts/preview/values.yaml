@@ -22,7 +22,7 @@ preview:
     pullPolicy: IfNotPresent
 
 db:
-  enabled: false
+  enabled: true
   
 preview-db:
   persistence:

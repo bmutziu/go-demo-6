@@ -1,0 +1,156 @@
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-b6m2z[0m
+{"level":"warn","ts":1574697047.85957,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574697047.8602357,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-44bjj[0m
+{"level":"warn","ts":1574697048.8647645,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574697048.8662934,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-bmutziu-go-demo-6-pr-23-serverl-qhjtl[0m
+{"level":"warn","ts":1574697055.95537,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574697056.3281975,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/go-demo-6.git @ master in path /workspace/source"}
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:15c**7e684bb4d3a5c27bd528a14b274fa8f2445,23:210ae5b0a412c3755164bd73d2294499aaabe91e
+DEBUG: ran git fetch --unshallow origin 210ae5b0a412c3755164bd73d2294499aaabe91e: 15c**7e684bb4d3a5c27bd528a14b274fa8f2445: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 15c**7e684bb4d3a5c27bd528a14b274fa8f2445 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 210ae5b0a412c3755164bd73d2294499aaabe91e in 
+Merged SHA 210ae5b0a412c3755164bd73d2294499aaabe91e with commit message 'Added Knative' into base branch master
+Merged SHA 11b1366ac0aa30f5a37469da0014d83bf338c55f with commit message 'Added Knative' into base branch master
+Merged SHA 9d5e1bd1a5eb9ec037add92b4682df2aa398a130 with commit message 'Added Knative' into base branch master
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-step2[0m
+go: finding github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: finding github.com/stretchr/objx v0.1.1
+go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: finding github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: finding github.com/prometheus/client_golang v0.9.2
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding github.com/stretchr/testify v1.2.2
+go: finding github.com/pmezard/go-difflib v1.0.0
+go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding github.com/golang/protobuf v1.2.0
+go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
+go: downloading github.com/prometheus/client_golang v0.9.2
+go: downloading gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/client_golang v0.9.2
+go: downloading github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: downloading github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: downloading github.com/golang/protobuf v1.2.0
+go: downloading github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: downloading github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: extracting github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: extracting github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: extracting gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: extracting github.com/prometheus/procfs v0.0.0-20181204211112-1dc9a6cbc91a
+go: extracting github.com/prometheus/common v0.0.0-20181126121408-4724e9255275
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: extracting github.com/golang/protobuf v1.2.0
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go test --run UnitTest -v
+go: downloading github.com/stretchr/testify v1.2.2
+go: extracting github.com/stretchr/testify v1.2.2
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/stretchr/objx v0.1.1
+go: downloading github.com/pmezard/go-difflib v1.0.0
+go: extracting github.com/pmezard/go-difflib v1.0.0
+go: extracting github.com/stretchr/objx v0.1.1
+go: extracting github.com/davecgh/go-spew v1.1.1
+=== RUN   TestMainUnitTestSuite
+=== RUN   TestMainUnitTestSuite/Test_HelloServer_Waits_WhenDelayIsPresent
+=== RUN   TestMainUnitTestSuite/Test_HelloServer_WritesHelloWorld
+=== RUN   TestMainUnitTestSuite/Test_HelloServer_WritesNokEventually
+=== RUN   TestMainUnitTestSuite/Test_HelloServer_WritesOk
+=== RUN   TestMainUnitTestSuite/Test_PersonServer_InvokesUpsertId_WhenPutPerson
+=== RUN   TestMainUnitTestSuite/Test_PersonServer_Panics_WhenFindReturnsError
+=== RUN   TestMainUnitTestSuite/Test_PersonServer_Panics_WhenUpsertIdReturnsError
+=== RUN   TestMainUnitTestSuite/Test_PersonServer_WritesPeople
+=== RUN   TestMainUnitTestSuite/Test_RunServer_InvokesListenAndServe
+=== RUN   TestMainUnitTestSuite/Test_SetupMetrics_InitializesHistogram
+--- PASS: TestMainUnitTestSuite (0.02s)
+    --- PASS: TestMainUnitTestSuite/Test_HelloServer_Waits_WhenDelayIsPresent (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_HelloServer_WritesHelloWorld (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_HelloServer_WritesNokEventually (0.01s)
+    --- PASS: TestMainUnitTestSuite/Test_HelloServer_WritesOk (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_PersonServer_InvokesUpsertId_WhenPutPerson (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_PersonServer_Panics_WhenFindReturnsError (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_PersonServer_Panics_WhenUpsertIdReturnsError (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_PersonServer_WritesPeople (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_RunServer_InvokesListenAndServe (0.00s)
+    --- PASS: TestMainUnitTestSuite/Test_SetupMetrics_InitializesHistogram (0.00s)
+PASS
+ok  	go-demo-6	0.047s
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-linux[0m
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/go-demo-6 main.go
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/go-demo-6"]                    
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+2019/11/25 15:51:49 pushed blob: sha256:9da4b36ab504c93436962d779c5dff09132f03955e33a56fae48f9891d232e5e
+2019/11/25 15:51:50 pushed blob: sha256:446b3f2bded1bc7f8ec0f53b11990524156dfb6a309fae78007871c046b9436f
+2019/11/25 15:51:50 gcr.io/bmgcpjx/go-demo-6:0.0.0-SNAPSHOT-PR-23-1: digest: sha256:8f4b406502d883e116c182c02cad62a9de**2e1355e5b6716773027e28dd5a84 size: 428
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-23-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-23-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: gcr.io\/bmgcpjx\/go-demo-6|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-23-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-23-1" >> requirements.yaml
+jx step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mbmutziu-go-demo-6-pr-23-serverl-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Found commit author match for: ******* with email address: *******@gmail.com
+Created environment *******-go-demo-6-pr-23
+Namespace **-*******-go-demo-6-pr-23 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 35.237.68.92.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: gcr.io/bmgcpjx/go-demo-6
+    tag: 0.0.0-SNAPSHOT-PR-23-1
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.jx/jenkins-x-versions
+
+
+WARNING: Could not find the service URL in namespace **-*******-go-demo-6-pr-23 for names go-demo-6, preview, **-*******-go-demo-6-pr-23-preview, preview-go-demo-6: services.serving.knative.dev "preview-go-demo-6" not found
+Updating PipelineActivities *******-go-demo-6-pr-23-1 which has status Running
+WARNING: Failed to find the service go-demo-6 : failed to find service go-demo-6 in namespace **-*******-go-demo-6-pr-23: services "go-demo-6" not found

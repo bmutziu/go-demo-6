@@ -23,7 +23,6 @@ spec:
             readinessProbe:
               httpGet:
                 path: {{ .Values.probePath }}
-                port: 8080
               periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
               successThreshold: {{ .Values.readinessProbe.successThreshold }}
               timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}

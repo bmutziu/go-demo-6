@@ -45,7 +45,7 @@ func main() {
 	if len(os.Getenv("SERVICE_NAME")) > 0 {
 		serviceName = os.Getenv("SERVICE_NAME")
 	}
-	//setupDb()
+	setupDb()
 	RunServer()
 }
 

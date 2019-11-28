@@ -20,21 +20,6 @@ spec:
             env:
             - name: DB
               value: {{ template "fullname" . }}-db
-            livenessProbe:
-              httpGet:
-                path: {{ .Values.probePath }}
-              initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
-              periodSeconds: {{ .Values.livenessProbe.periodSeconds }}
-              successThreshold: {{ .Values.livenessProbe.successThreshold }}
-              timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
-            readinessProbe:
-              tcpsocket:
-                port: 8080
-              initialDelaySeconds: 15
-              periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
-              successThreshold: {{ .Values.readinessProbe.successThreshold }}
-              timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}
-              failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
             resources:
 {{ toYaml .Values.resources | indent 14 }}
 {{- end }}

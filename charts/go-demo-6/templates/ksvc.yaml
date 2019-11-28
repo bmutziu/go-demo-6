@@ -29,7 +29,8 @@ spec:
               timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
             readinessProbe:
               tcpsocket:
-                port: 80
+                port: 8080
+              initialDelaySeconds: 15
               periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
               successThreshold: {{ .Values.readinessProbe.successThreshold }}
               timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}

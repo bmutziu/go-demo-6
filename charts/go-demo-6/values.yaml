@@ -30,8 +30,8 @@ livenessProbe:
 readinessProbe:
   periodSeconds: 10
   successThreshold: 1
-  timeoutSeconds: 1
-  failureThreshold: 3
+  timeoutSeconds: 6
+  failureThreshold: 6
 terminationGracePeriodSeconds: 10
 go-demo-6-db:
   replicaSet:

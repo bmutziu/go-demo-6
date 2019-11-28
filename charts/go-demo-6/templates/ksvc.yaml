@@ -28,8 +28,8 @@ spec:
               successThreshold: {{ .Values.livenessProbe.successThreshold }}
               timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
             readinessProbe:
-              httpGet:
-                path: {{ .Values.probePath }}
+              tcpsocket:
+                port: 80
               periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
               successThreshold: {{ .Values.readinessProbe.successThreshold }}
               timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}
